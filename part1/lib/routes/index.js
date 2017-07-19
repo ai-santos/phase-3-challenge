@@ -18,6 +18,11 @@ router.get('/api/square', function (request, response) {
 	response.json({ "result": square });
 });
 
-router.post('/api/compute');
+// router.post('/api/compute', (request, response) => {
+// 	const operator = request.query.operator
+// 	const [ operands ] = request.operands
+// 	response.json({"result": operator})
+// })
+
 
 module.exports = router;
